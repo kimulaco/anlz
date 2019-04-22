@@ -1,21 +1,22 @@
-# npm-download-counts
+# npm-download-counts (WIP)
 
-[![npm version](https://badge.fury.io/js/npm-download-counts.svg)](https://badge.fury.io/js/npm-download-counts)
+[![npm version](https://badge.fury.io/js/anlz.svg)](https://badge.fury.io/js/anlz)
 
-This module can easily get the download count of npm.
+Analyze information in npm module.
 
 ## Install
 
 ```shell
-npm install --save npm-download-counts
+npm install --save anlz
 ```
 
 ## Use
 
 ```js
 (astnc () => {
-  const npmDownloadCounts = require('npm-download-counts')
-  const response = await npmDownloadCounts('package-name', 'last-year')
+  const Anlz = require('../anlz')
+  const anlz = new Anlz('package-name')
+  const response = await anlz.download('last-year')
   console.log(response)
   {
     downloads: 1000,
