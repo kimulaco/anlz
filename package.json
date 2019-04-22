@@ -1,0 +1,24 @@
+{
+  "name": "npm-download-counts",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/kimulaco/npm-download-counts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kimulaco/npm-download-counts.git"
+  },
+  "main": "npm-download-counts.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "commander": "^2.20.0"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
