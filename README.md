@@ -1,4 +1,4 @@
-# npm-download-counts (WIP)
+# anlz (WIP)
 
 [![npm version](https://badge.fury.io/js/anlz.svg)](https://badge.fury.io/js/anlz)
 
