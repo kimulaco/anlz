@@ -11,42 +11,42 @@ const enabledResponse = (response) => {
   return false
 }
 
-describe('Npmanalyze', () => {
-  let npmanalyze
+describe('Anlz', () => {
+  let anlz
 
   beforeAll(() => {
-    const Npmanalyze = require('../npmanalyze')
-    npmanalyze = new Npmanalyze('npm')
+    const Anlz = require('../anlz')
+    anlz = new Anlz('npm')
   })
 
   describe('download([period])', () => {
     test('\'last-year\'', async () => {
-      const response = await npmanalyze.download('last-year')
+      const response = await anlz.download('last-year')
       expect(enabledResponse(response)).toBeTruthy()
     })
 
     test('\'last-month\'', async () => {
-      const response = await npmanalyze.download('last-month')
+      const response = await anlz.download('last-month')
       expect(enabledResponse(response)).toBeTruthy()
     })
 
     test('\'last-week\'', async () => {
-      const response = await npmanalyze.download('last-week')
+      const response = await anlz.download('last-week')
       expect(enabledResponse(response)).toBeTruthy()
     })
 
     test('\'last-day\'', async () => {
-      const response = await npmanalyze.download('last-day')
+      const response = await anlz.download('last-day')
       expect(enabledResponse(response)).toBeTruthy()
     })
 
     test('\'2019-01-01\'', async () => {
-      const response = await npmanalyze.download('2019-01-01')
+      const response = await anlz.download('2019-01-01')
       expect(enabledResponse(response)).toBeTruthy()
     })
 
     test('\'2019-01-01:2019-01-31\'', async () => {
-      const response = await npmanalyze.download('2019-01-01:2019-01-31')
+      const response = await anlz.download('2019-01-01:2019-01-31')
       expect(enabledResponse(response)).toBeTruthy()
     })
   })

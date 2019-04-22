@@ -1,16 +1,19 @@
 {
-  "name": "npmanalyze",
+  "name": "anlz",
   "version": "0.0.1",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "npm",
+    "analytics"
+  ],
   "author": "",
   "license": "MIT",
-  "homepage": "https://github.com/kimulaco/npmanalyze",
+  "homepage": "https://github.com/kimulaco/anlz",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kimulaco/npmanalyze.git"
+    "url": "https://github.com/kimulaco/anlz.git"
   },
-  "main": "npmanalyze.js",
+  "main": "anlz.js",
   "scripts": {
     "test": "jest"
   },

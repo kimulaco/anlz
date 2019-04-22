@@ -1,7 +1,7 @@
 const axios = require('axios')
 const apiUrl = 'https://api.npmjs.org'
 
-class Npmanalyze {
+class Anlz {
   constructor(packageName) {
     this.packageName = packageName
   }
@@ -15,4 +15,4 @@ class Npmanalyze {
   }
 }
 
-module.exports = Npmanalyze
+module.exports = Anlz
