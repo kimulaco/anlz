@@ -1,4 +1,4 @@
-const enabledResponse = (response) => {
+const testDownloadResponse = (response) => {
   if (
     typeof response.downloads === 'number' &&
     typeof response.start === 'string' &&
@@ -19,35 +19,35 @@ describe('Anlz', () => {
     anlz = new Anlz('npm')
   })
 
-  describe('download([period])', () => {
+  describe('getDownload([period])', () => {
     test('\'last-year\'', async () => {
-      const response = await anlz.download('last-year')
-      expect(enabledResponse(response)).toBeTruthy()
+      const response = await anlz.getDownload('last-year')
+      expect(testDownloadResponse(response)).toBeTruthy()
     })
 
     test('\'last-month\'', async () => {
-      const response = await anlz.download('last-month')
-      expect(enabledResponse(response)).toBeTruthy()
+      const response = await anlz.getDownload('last-month')
+      expect(testDownloadResponse(response)).toBeTruthy()
     })
 
     test('\'last-week\'', async () => {
-      const response = await anlz.download('last-week')
-      expect(enabledResponse(response)).toBeTruthy()
+      const response = await anlz.getDownload('last-week')
+      expect(testDownloadResponse(response)).toBeTruthy()
     })
 
     test('\'last-day\'', async () => {
-      const response = await anlz.download('last-day')
-      expect(enabledResponse(response)).toBeTruthy()
+      const response = await anlz.getDownload('last-day')
+      expect(testDownloadResponse(response)).toBeTruthy()
     })
 
     test('\'2019-01-01\'', async () => {
-      const response = await anlz.download('2019-01-01')
-      expect(enabledResponse(response)).toBeTruthy()
+      const response = await anlz.getDownload('2019-01-01')
+      expect(testDownloadResponse(response)).toBeTruthy()
     })
 
     test('\'2019-01-01:2019-01-31\'', async () => {
-      const response = await anlz.download('2019-01-01:2019-01-31')
-      expect(enabledResponse(response)).toBeTruthy()
+      const response = await anlz.getDownload('2019-01-01:2019-01-31')
+      expect(testDownloadResponse(response)).toBeTruthy()
     })
   })
 })
